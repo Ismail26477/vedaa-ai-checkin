@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { AuthProvider } from "@/src/contexts/AuthContext"
 import { AttendanceProvider } from "@/src/contexts/AttendanceContext"
-import Index from "@/src/pages/Index"
+import Login from "@/src/pages/Login"
 
 const queryClient = new QueryClient()
 
@@ -18,7 +18,7 @@ export default function Page() {
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <Index />
+            <Login />
           </TooltipProvider>
         </AttendanceProvider>
       </AuthProvider>
